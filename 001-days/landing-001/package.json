@@ -1,0 +1,11 @@
+{
+  "name": "Landing-001",
+  "version": "1.0.0",
+  "description": "Landing page 001 - challange - 30min",
+  "main": "index.js",
+  "author": "Vnk",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.24.0"
+  }
+}

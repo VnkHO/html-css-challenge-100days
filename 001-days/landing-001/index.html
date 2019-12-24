@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing page 001</title>
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <link href="./styles/style.scss" rel="stylesheet">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+
+  <header class="home__header">
+    <nav class="home__nav">
+      <ul class="home__nav-list">
+        <li class="home__nav-list--item"><a class="home__nav-list--link uppercase" href="#">Locations</a></li>
+        <li class="home__nav-list--item"><a class="home__nav-list--link uppercase" href="#">Memberships</a></li>
+      </ul>
+      <h1 class="home__nav-list--title">HUB60</h1>
+      <ul class="home__nav-list">
+        <li class="home__nav-list--item"><a class="home__nav-list--link" href="#">Reserve a place</a></li>
+        <li class="home__nav-list--item"><a class="home__nav-list--link btn btn--green" href="#">Book a tour</a></li>
+      </ul>
+    </nav>
+
+    <div class="home__title-container">
+      <h2 class="home__title-primary">
+        Premier shared work
+        <span class="home__title-primary--block">space within a vibrant</span>
+        <span class="home__title-primary--block">startup community</span>
+      </h2>
+    </div>
+
+    <div class="home__image-container">
+      <div class="home__image-nav">
+        <p class="home__image-nav--title">Selected spaces</p>
+        <form class="home__image-nav--form">
+          <label class="home__image-nav--label">Filter by</label>
+          <input class="home__image-nav--input uppercase" list="spaces" value="LOCATION" />
+          <datalist class="home__image-nav--datalist" id="spaces">
+            <option class="home__image-nav--option" value="Location" />
+            <option class="home__image-nav--option" value="Cities" />
+            <option class="home__image-nav--option" value="Spaces" />
+          </datalist>
+        </form>
+      </div>
+      <ul class="home__image-list">
+        <li class="home__image-list--item">
+          <figure class="home__image-list--figure">
+            <img class="home__image-list--img" src="./assets/img/home-01.png" alt="New York" lazy="loading" />
+            <figcaption class="home__image-list--figcaption uppercase">New York</figcaption>
+          </figure>
+          <h4 class="home__image-list--title">Mood music: the power suit playlist</h4>
+        </li class="home__image-list--item">
+
+        <li class="home__image-list--item">
+          <figure class="home__image-list--figure">
+            <img class="home__image-list--img" src="./assets/img/home-02.png" alt="San Francisco" lazy="loading" />
+            <figcaption class="home__image-list--figcaption uppercase">San Francisco</figcaption>
+          </figure>
+          <h4 class="home__image-list--title">What your favorite colours say about you</h4>
+        </li>
+
+        <li class="home__image-list--item">
+          <figure class="home__image-list--figure">
+            <img class="home__image-list--img" src="./assets/img/home-03.png" alt="Los Angeles" lazy="loading" />
+            <figcaption class="home__image-list--figcaption uppercase">Los Angeles</figcaption>
+          </figure>
+          <h4 class="home__image-list--title">Mood music: the power suit playlist</h4>
+        </li>
+      </ul>
+    </div>
+
+  </header>
+
+  <main class="content">
+    <figure class="content__image-figure">
+      <img class="content__image-img" src="./assets/img/home-04.png" alt="Seio Office" />
+    </figure>
+
+    <article class="content__article">
+      <p class="content__article--city">New York city</p>
+      <h3 class="content__article-title">Seio Office</h3>
+      <p class="content__article-description">Clear inspiration derived from the 1960s and 1970s</p>
+      <p class="content__article-description"><strong>The new office space</strong> in Sergio is distinguished by
+        dynamics, energy, youth and rock & roll</p>
+      <div class="content__article-cta">
+        <a class="content__article-cta--link uppercase" href="#">See availability</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <p class="footer__content--city uppercase">New York city</p>
+      <h2 class="footer__content-title">Free yourself from the constratins of a conventional four-walled office.</h2>
+      <div class="footer__content-cta">
+        <a href="#" class="footer__content-cta--link btn btn--green">Find your place</a>
+      </div>
+    </div>
+    <figure class="footer__figure">
+      <img class="footer__img" src="./assets/img/home-05.png" alt="New York Place" />
+    </figure>
+  </footer>
+
+</body>
+
+</html>
