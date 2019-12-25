@@ -1,0 +1,8 @@
+{
+  "name": "002-Days",
+  "version": "1.0.0",
+  "description": "002 Days - Fun project",
+  "main": "index.js",
+  "author": "Vnk",
+  "license": "MIT"
+}
