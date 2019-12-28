@@ -1,0 +1,8 @@
+{
+  "name": "005-Days",
+  "version": "1.0.0",
+  "description": "Simple section in HTML/CSS",
+  "main": "index.js",
+  "author": "Vnk",
+  "license": "MIT"
+}

@@ -28,4 +28,4 @@ Fun project - Simple text with animation in HTML/CSS.
 
 ## 005 - Days - Done
 
-Fun project - Simple 
+Fun project - Simple section in HTML/CSS.
