@@ -32,8 +32,9 @@ body {
 .section__article {
   position: relative;
   width: 32rem;
-  background-color: #F1F1F1;
+  margin: 2rem;
   padding: 10rem 4rem 6rem;
+  background-color: #F1F1F1;
   box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
 }
 
