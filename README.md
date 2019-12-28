@@ -17,3 +17,15 @@ Implementing a simple Check List in only HTML/CSS.
 ## 003 - Days - Done
 
 Fun project - Simple button with animation in HTML/CSS.
+
+---
+
+## 004 - Days - Done
+
+Fun project - Simple text with animation in HTML/CSS.
+
+---
+
+## 005 - Days - Done
+
+Fun project - Simple 
