@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
 }
 
 .container {
@@ -23,6 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #E75A7C;
+  overflow: hidden;
 }
 
 h1 {
