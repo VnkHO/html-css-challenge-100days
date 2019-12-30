@@ -29,3 +29,15 @@ Fun project - Simple text with animation in HTML/CSS.
 ## 005 - Days - Done
 
 Fun project - Simple section in HTML/CSS.
+
+---
+
+## 006 - Days - Done
+
+Fun project - Simple Loader in HTML/CSS.
+
+---
+
+## 007 - Days - Done
+
+Fun project - Simple Typography editable in HTML/CSS.
