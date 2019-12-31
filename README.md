@@ -41,3 +41,9 @@ Fun project - Simple Loader in HTML/CSS.
 ## 007 - Days - Done
 
 Fun project - Simple Typography editable in HTML/CSS.
+
+---
+
+## 008 - Days - Done
+
+Fun project - Happy New Year !

@@ -1,0 +1,228 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Serif', serif, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.animation {
+  position: relative;
+  width: 40rem;
+}
+
+.animation div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  margin: -3rem 0;
+  z-index: 2;
+  transform: skewY(-5deg);
+}
+
+.animation div:nth-child(2),
+.animation div:nth-child(4) {
+  transform: skewY(14.5deg);
+  z-index: 1;
+}
+
+.animation div:nth-child(4) {
+  transform: skewY(25deg);
+  transform-origin: left;
+  top: -5.2rem;
+}
+
+.animation div::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.animation div:nth-child(1)::before,
+.animation div:nth-child(3)::before {
+  background: linear-gradient(-160deg, #B5E2FA, #0FA3B1);
+  transform: scaleX(0);
+}
+
+.animation div:nth-child(2)::before,
+.animation div:nth-child(4)::before {
+  background: linear-gradient(-20deg, #B5E2FA, rgb(22, 144, 155));
+  transform: scaleX(0);
+}
+
+.animation div:nth-child(1)::before {
+  animation: animate 1s linear forwards;
+  transform-origin: right;
+  animation-delay: 11.5s;
+}
+
+.animation div:nth-child(2)::before {
+  animation: animate 1s linear forwards;
+  transform-origin: left;
+  animation-delay: 12.5s;
+}
+
+.animation div:nth-child(3)::before {
+  animation: animate 1s linear forwards;
+  transform-origin: right;
+  animation-delay: 13.5s;
+}
+
+.animation div:nth-child(4)::before {
+  animation: animate 1s linear forwards;
+  transform-origin: left;
+  animation-delay: 14.5s;
+}
+
+/* */
+
+.animation div:nth-child(1)::after,
+.animation div:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.animation div h2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  opacity: 0;
+  color: #F9F7F3;
+}
+
+.animation div:nth-child(1) h2 {
+  animation: fadeText .5s linear forwards;
+  animation-delay: 13s;
+  font-size: 3.5em;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.animation div:nth-child(3) h2 {
+  animation: fadeText .5s linear forwards;
+  animation-delay: 14.5s;
+  font-size: 7em;
+  letter-spacing: 6px;
+  font-weight: 800;
+}
+
+
+@keyframes animate {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/** Loading **/
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: #F1F1F1;
+  animation: fadeout 11s linear forwards;
+}
+
+.loading h2 {
+  color: #010101;
+}
+
+.bar {
+  position: relative;
+  width: 40rem;
+  height: 4rem;
+  background-color: transparent;
+  margin: 0 2.5rem;
+  border: 2px solid #010101;
+}
+
+.bar::after {
+  content: 'Loading...';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 10px;
+  line-height: 3.6rem;
+  color: #F9F7F3;
+  mix-blend-mode: difference;
+}
+
+.bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #010101;
+  transform-origin: left;
+  animation: animate 10s linear forwards;
+}
+
+@keyframes fadeout {
+  0%, 91% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
