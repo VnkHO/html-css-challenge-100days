@@ -54,4 +54,4 @@ Fun project - Happy New Year !
 
 Landing Page in 30min - HTML/CSS
 
-<!-- ![Landing - 009-Days](/Users/vnkho/Desktop/challenge-100days/html-css-challange-100days/009-days/landing-009.png) -->
+![Landing - 009-Days](https://raw.githubusercontent.com/VnkHO/html-css-challenge-100days/master/009-days/landing-009.png)
