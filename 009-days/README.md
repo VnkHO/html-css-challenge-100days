@@ -2,4 +2,4 @@
 
 ## 009 - Days - Done
 
-Landing Page in 30min
+Landing Page in 30min - Only desktop

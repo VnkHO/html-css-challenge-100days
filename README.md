@@ -47,3 +47,9 @@ Fun project - Simple Typography editable in HTML/CSS.
 ## 008 - Days - Done
 
 Fun project - Happy New Year !
+
+---
+
+## 009 - Days - Done
+
+Landing Page in 30min - HTML/CSS
